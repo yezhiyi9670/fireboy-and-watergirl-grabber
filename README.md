@@ -18,4 +18,4 @@ Note that the `gameIndex.html` will likely not work if directly opened in the br
 The level files can be edited using [Tiled](https://github.com/mapeditor/tiled). If you decide to use it, be notified that:
 
 1. Tiled may need additional tileset atlasses to properly render the levels. You can use [the ones in this repository](./tiled-atlasses/) if you don't want to draw your own ones.
-2. Please use the `json1.dll` plugin instead of `json.dll`. The latter will emit a newer json format which does not work with the game.
+2. Please use the `json1.dll` plugin instead of `json.dll` (except for Fireboy and Watergirl 6 Fairy Tales). The latter will emit a newer json format which does not work with the game.
