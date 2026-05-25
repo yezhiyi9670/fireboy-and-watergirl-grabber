@@ -21,6 +21,8 @@ for entry in har_entries:
     url: str = entry['request']['url']
     if url.startswith(common.grab_url):
         url = url[len(common.grab_url):]
+        if url.find('#') != -1:
+            url = url[0:url.find('#')]
         if url.find('?') != -1:
             url = url[0:url.find('?')]
         if hash_list.get(url):
