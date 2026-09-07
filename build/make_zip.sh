@@ -9,5 +9,5 @@ if [[ -f upload.zip ]]; then
 fi
 (
     fd -t f --hidden --exclude ".git" -0 --glob "*" "${games[@]}" homepage/dist homepage/api;
-    echo -n "index.php"$'\0';
+    echo -n "index.html"$'\0';
 ) | xargs -0 zip upload.zip
