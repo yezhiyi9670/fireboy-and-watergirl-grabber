@@ -4,7 +4,7 @@ set -euo pipefail
 
 source "$(dirname "$0")/include/vars.sh"
 
-for game in ${games[@]}; do
+for game in "${games[@]}"; do
     dir="_grabber/tiled-atlasses/$game"
     if [[ ! -d "$dir" ]]; then
         mkdir "$dir"
